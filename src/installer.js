@@ -4,7 +4,7 @@ import os from 'os';
 import * as core from '@actions/core';
 import * as tc from '@actions/tool-cache';
 
-const ROOT_URL = "https://github.com/projectdiscovery/nuclei/releases/download";
+const ROOT_URL = "https://github.com/gcmurphy/nuclei/releases/download";
 
 function getPackage() {
     switch (os.type()) {
@@ -23,7 +23,7 @@ async function getLatestInfo() {
 		let data = [];
 		https.get({
 			hostname: 'api.github.com',
-			path: '/repos/projectdiscovery/nuclei/releases/latest',
+			path: '/repos/gcmurphy/nuclei/releases/latest',
 			headers: { 'User-Agent': 'Github Actions' }
 		}, res => {
 			res.on('data', chunk => data.push(chunk));
