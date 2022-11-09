@@ -15,7 +15,8 @@ export async function generateGithubReportFile(token) {
                 token,
                 "project-name": GITHUB_REPOSITORY,
                 "issue-label": "dast:nuclei",
-                "dedupe": true,
+                "severity-as-label": true,
+                "dedupe-issues": true,
             }
         }
         const githubConfigYml = yaml.dump(content, {
