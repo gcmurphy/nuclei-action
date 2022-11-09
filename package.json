@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/projectdiscovery/nuclei-action.git"
+    "url": "git+https://github.com/gcmurphy/nuclei-action.git"
   },
   "keywords": [
     "nuclei",
@@ -17,9 +17,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/projectdiscovery/nuclei-action/issues"
+    "url": "https://github.com/gcmurphy/nuclei-action/issues"
   },
-  "homepage": "https://github.com/projectdiscovery/nuclei-action#readme",
+  "homepage": "https://github.com/gcmurphy/nuclei-action#readme",
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@actions/exec": "^1.1.1",
